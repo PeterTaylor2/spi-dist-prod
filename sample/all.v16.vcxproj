@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CDE1C1CF-8F51-4A4A-B50E-CFBC4F054BBD}</ProjectGuid>
+    <RootNamespace>all</RootNamespace>
+    <ProjectName>all</ProjectName>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">win32\Debug\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make v16.vcxproj COMPILER=msvc16 BITS=32 DEBUG=1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean-v16.vcxproj COMPILER=msvc16 BITS=32 DEBUG=1 &amp;&amp; make v16.vcxproj COMPILER=msvc16 BITS=32 DEBUG=1</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean-v16.vcxproj COMPILER=msvc16 BITS=32 DEBUG=1</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">win32\Release\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make v16.vcxproj COMPILER=msvc16 BITS=32</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean-v16.vcxproj COMPILER=msvc16 BITS=32 &amp;&amp; make v16.vcxproj COMPILER=msvc16 BITS=32</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean-v16.vcxproj COMPILER=msvc16 BITS=32</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">win64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">win64\Debug\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make v16.vcxproj COMPILER=msvc16 BITS=64 DEBUG=1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make clean-v16.vcxproj COMPILER=msvc16 BITS=64 DEBUG=1 &amp;&amp; make v16.vcxproj COMPILER=msvc16 BITS=64 DEBUG=1</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make clean-v16.vcxproj COMPILER=msvc16 BITS=64 DEBUG=1</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">win64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">win64\Release\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make v16.vcxproj COMPILER=msvc16 BITS=64</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make clean-v16.vcxproj COMPILER=msvc16 BITS=64 &amp;&amp; make v16.vcxproj COMPILER=msvc16 BITS=64</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make clean-v16.vcxproj COMPILER=msvc16 BITS=64</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="spi\makefiles\build\dll.mk" />
+    <ClCompile Include="spi\makefiles\build\exe.mk" />
+    <ClCompile Include="spi\makefiles\build\lib.mk" />
+    <ClCompile Include="spi\makefiles\build\objects.mk" />
+    <ClCompile Include="spi\makefiles\build\vcproj.mk" />
+    <ClCompile Include="spi\makefiles\config\config.mk" />
+    <ClCompile Include="spi\makefiles\config\linux64.mk" />
+    <ClCompile Include="spi\makefiles\config\linux64_gcc.mk" />
+    <ClCompile Include="spi\makefiles\config\linux64_gcc_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\linux64_gcc_release.mk" />
+    <ClCompile Include="spi\makefiles\config\macos64.mk" />
+    <ClCompile Include="spi\makefiles\config\macos64_gcc.mk" />
+    <ClCompile Include="spi\makefiles\config\macos64_gcc_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\macos64_gcc_release.mk" />
+    <ClCompile Include="spi\makefiles\config\msvc_version.mk" />
+    <ClCompile Include="spi\makefiles\config\python.mk" />
+    <ClCompile Include="spi\makefiles\config\win32.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc10.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc10_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc10_debug2.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc10_release.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc14.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc14_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc14_debug2.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc14_release.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc15.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc15_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc15_release.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc16.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc16_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc16_release.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc9.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc9_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc9_debug2.mk" />
+    <ClCompile Include="spi\makefiles\config\win32_msvc9_release.mk" />
+    <ClCompile Include="spi\makefiles\config\win64.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc10.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc10_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc10_debug2.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc10_release.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc14.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc14_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc14_debug2.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc14_release.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc15.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc15_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc15_release.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc16.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc16_debug.mk" />
+    <ClCompile Include="spi\makefiles\config\win64_msvc16_release.mk" />
+    <ClCompile Include="spi\makefiles\spi\base_service.mk" />
+    <ClCompile Include="spi\makefiles\spi\cli.mk" />
+    <ClCompile Include="spi\makefiles\spi\dll.mk" />
+    <ClCompile Include="spi\makefiles\spi\doc.mk" />
+    <ClCompile Include="spi\makefiles\spi\pyd.mk" />
+    <ClCompile Include="spi\makefiles\spi\replay.mk" />
+    <ClCompile Include="spi\makefiles\spi\runtime.mk" />
+    <ClCompile Include="spi\makefiles\spi\spcl.mk" />
+    <ClCompile Include="spi\makefiles\spi\spcli.mk" />
+    <ClCompile Include="spi\makefiles\spi\sppy.mk" />
+    <ClCompile Include="spi\makefiles\spi\spxl.mk" />
+    <ClCompile Include="spi\makefiles\spi\xll.mk" />
+    <ClCompile Include="spi\makefiles\spi\xllTest.mk" />
+    <ClCompile Include="editLicense.py" />
+    <ClCompile Include="spi\makefiles\python3\copyManifest.py" />
+    <ClCompile Include="spi\makefiles\python3\copyVcxproj.py" />
+    <ClCompile Include="spi\makefiles\python3\exe2txt.py" />
+    <ClCompile Include="spi\makefiles\python3\installPython.py" />
+    <ClCompile Include="spi\makefiles\python3\makeCopyDebugScript.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj10.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj10Config.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj10Test.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj14.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj14Config.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj14Test.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj15.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj15Config.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj15Test.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj16.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj16Config.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj16Test.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj9.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcproj9Config.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcxproj.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcxprojConfig.py" />
+    <ClCompile Include="spi\makefiles\python3\makeVcxprojTest.py" />
+    <ClCompile Include="spi\makefiles\python3\mergeXML.py" />
+    <ClCompile Include="spi\makefiles\python3\rstrip.py" />
+    <ClCompile Include="spi\makefiles\python3\vstools.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="license.h" />
+    <ClInclude Include="spi\makefiles\version.mk" />
+    <ClInclude Include="spi\config\configTimeout.hpp" />
+    <ClInclude Include="spi\spi\Namespace.hpp" />
+    <ClInclude Include="spi\spi\src\Timeout.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="all.mk" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
