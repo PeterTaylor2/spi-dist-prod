@@ -1,0 +1,9 @@
+# example inputs
+
+# dates:    [DATE, ...]
+# addDates: [DATE, ...]
+
+dates:      [2014-04-01, 2014-07-01, 2014-10-01]
+dates:      []
+addDates:   [2014-10-01, 2015-01-01]
+addDates:   []

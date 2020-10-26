@@ -1,0 +1,12 @@
+# example inputs
+
+# x: FLOAT
+# y: FLOAT
+# z: FLOAT
+
+x:  2.5
+y:  3.4
+
+x:  2.5
+y:  -3.5
+z:  1.2

@@ -1,0 +1,30 @@
+# example inputs
+
+# couponRate:      FLOAT
+# startDate:       DATE
+# couponInterval:  STRING
+# maturityDate:    DATE
+# dayCountConv:    STRING
+# frontStub:       BOOL
+# shortStub:       BOOL
+# subtractInitial: BOOL
+# keepStartDate:   BOOL
+# addFinal:        BOOL
+# accBadDayConv:   STRING
+# payBadDayConv:   STRING
+# holidays:        STRING
+
+couponRate:      0.02
+startDate:       2015-03-31
+couponInterval:  6M
+maturityDate:    2020-03-31
+dayCountConv:    30/360
+#frontStub:       BOOL
+#shortStub:       BOOL
+#subtractInitial: BOOL
+#keepStartDate:   BOOL
+addFinal:        True
+accBadDayConv:   M
+accBadDayConv:   N
+payBadDayConv:   M
+holidays:        HOLIDAY.USD

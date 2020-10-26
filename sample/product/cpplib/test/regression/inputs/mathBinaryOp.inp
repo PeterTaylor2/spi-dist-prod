@@ -1,0 +1,13 @@
+# example inputs
+
+# x:        FLOAT
+# binaryOp: STRING
+# y:        FLOAT
+
+x:          12.0
+binaryOp:   +
+binaryOp:   -
+binaryOp:   *
+binaryOp:   /
+binaryOp:   **
+y:          3.0

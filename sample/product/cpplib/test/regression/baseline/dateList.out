@@ -1,0 +1,23 @@
+Permutation 1 of 1
+dates:                [2014-04-01, 2014-07-01, 2014-10-01]
+addDates:             [2014-10-01, 2015-01-01]
+
+DateList (dates)
+NumItems: 3
+ 1: 2014-04-01
+ 2: 2014-07-01
+ 3: 2014-10-01
+
+DateList (addDates)
+NumItems: 2
+ 1: 2014-10-01
+ 2: 2015-01-01
+
+DateList (mergeDates)
+NumItems: 4
+ 1: 2014-04-01
+ 2: 2014-07-01
+ 3: 2014-10-01
+ 4: 2015-01-01
+
+

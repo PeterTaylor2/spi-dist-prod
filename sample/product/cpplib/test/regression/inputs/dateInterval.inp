@@ -1,0 +1,11 @@
+# example inputs
+
+# date:         DATE
+# dateInterval: STRING
+
+date:           2015-04-30
+date:           2015-02-28
+dateInterval:   3M
+# dateInterval:   3F
+# ISDA/CDS library does not understand 3F
+

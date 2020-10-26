@@ -1,0 +1,12 @@
+# example inputs
+
+holidays:       HOLIDAY.USD
+holidays:       HOLIDAY.GBP
+holidays:       "NONE"
+startDate:      2014-11-27
+endDate:        2014-12-24
+offset:         31
+badDayConv:     M
+interval:       1M
+adjType:        B
+dateOrInterval: 1M,M

@@ -1,0 +1,35 @@
+Permutation 1 of 5
+x:                    12.0
+binaryOp:             +
+y:                    3.0
+
+Result:    15.000000
+
+Permutation 2 of 5
+x:                    12.0
+binaryOp:             -
+y:                    3.0
+
+Result:     9.000000
+
+Permutation 3 of 5
+x:                    12.0
+binaryOp:             *
+y:                    3.0
+
+Result:    36.000000
+
+Permutation 4 of 5
+x:                    12.0
+binaryOp:             /
+y:                    3.0
+
+Result:     4.000000
+
+Permutation 5 of 5
+x:                    12.0
+binaryOp:             **
+y:                    3.0
+
+Result:  1728.000000
+

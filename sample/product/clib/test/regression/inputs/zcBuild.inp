@@ -1,0 +1,13 @@
+# example inputs
+
+baseDate:         2015-04-10
+cashDates:        [2015-07-10, 2015-10-12, 2016-01-11, 2016-04-11]
+cashRates:        [0.01569, 0.01672, 0.01739, 0.01777]
+cashDayCountConv: ACT/360
+interpType:       FLAT_FORWARDS
+swapDates:        [2017-04-10, 2018-04-10, 2019-04-10, 2020-04-10, 2022-04-10, 2025-04-10]
+swapRates:        [0.01991, 0.02146, 0.02242, 0.02319, 0.02414, 0.02472]
+couponInterval:   6M
+fixedDcc:         30/360
+badDayConv:       M
+holidays:         "NONE"

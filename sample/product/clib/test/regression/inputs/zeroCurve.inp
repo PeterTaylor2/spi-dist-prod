@@ -1,0 +1,12 @@
+baseDate:     2015-04-08
+baseRate:     0.01
+slope:        1
+# hump:         FLOAT
+interpType:   FLAT_FORWARDS
+interpType:   LINEAR_INTERP
+startDate:    2016-04-08
+maturityDate: 2016-07-08
+dayCountConv: ACT/365F
+rateType:     SIMPLE
+
+

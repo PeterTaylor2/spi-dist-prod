@@ -1,0 +1,27 @@
+# example inputs
+
+# startDate:    DATE
+# endDate:      DATE
+# dayCountConv: STRING
+
+# first we test that all the knwon day count conventions work
+startDate:      2015-01-01
+endDate:        2015-09-15
+dayCountConv:   ACTUAL/365F
+dayCountConv:   ACT/365F
+dayCountConv:   A/365F
+dayCountConv:   ACTUAL/360
+dayCountConv:   ACT/360
+dayCountConv:   A/360
+dayCountConv:   ACTUAL/ACTUAL
+dayCountConv:   ACT/ACT
+dayCountConv:   A/A
+dayCountConv:   30/360
+dayCountConv:   B30/360
+dayCountConv:   30E/360
+dayCountConv:   B30E/360
+
+# now a string which is not supported
+startDate:      2015-01-01
+endDate:        2015-09-15
+dayCountConv:   NOT_A_DAY_COUNT_CONV
