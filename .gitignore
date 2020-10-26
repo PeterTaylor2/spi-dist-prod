@@ -1,15 +1,13 @@
 **/win32/msvc*
 **/win64/msvc*
-**/Release*
-**/Debug*
 macos64*.mk
 win32_msvc9*
 win??_msvc10*
 win??_msvc14*
-sptex.exe
 *.pyc
 *v10.vcxproj*
 *v14.vcxproj*
+*.user
 *.svo
 *.svt
 **/product/*/*/src
@@ -17,6 +15,8 @@ sptex.exe
 **/product/*/dll/*.hpp
 **/product/*/doc/tex
 **/product/*/doc/tex_imports
-**/product/*/doc/*.pdf
+*.pdf
 *calls.csv
 *.log
+**/.vs
+/sample/makefiles/config-*.mk
