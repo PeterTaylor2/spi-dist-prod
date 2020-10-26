@@ -1,0 +1,32 @@
+See ../../README.txt for further explanations
+Example of the contents of the computer specific .mk files.
+
+# this means the following:
+# 1. default build is for 64-bits (driven by SARTORIAL_CONFIG)
+# 2. default compiler is msvc16 (driven by WIN32_COMPILER - this is from Visual Studio 2019)
+# 3. No 32-bit python versions are available (G_WIN32_PY_VERSIONS and G_WIN32_PY_VERSION)
+# 4. Use XL12 for building Excel (G_WIN32_XL_VERSIONS2 - XL4 is obsolete anyway)
+# 5. For 64-bit python we have python3.7 which is also the standard version to use (G_WIN64_PY_VERSIONS and G_WIN64_PY_VERSION)
+# 6. The location of 64-bit python is not overriden, hence is the one defined by ../win64.mk (G_WIN64_PYTHON37 etc)
+
+SARTORIAL_CONFIG=win64
+WIN32_COMPILER=msvc16
+G_WIN32_PY_VERSIONS=
+G_WIN32_PY_VERSION=
+G_WIN32_XL_VERSIONS=12
+G_WIN64_PY_VERSIONS=37
+G_WIN64_PY_VERSION=37
+# G_WIN32_PYTHON27=
+# G_WIN32_PYTHON37=
+# G_WIN64_PYTHON37=
+
+# version numbers for versions of Microsoft Visual Studio
+# these are for when we are over-riding what is in msvc_site.mk
+# some of these numbers are for quite an old version of the compiler and refer to directory names
+
+G_VS15_PACKAGE_TYPE:=Community
+G_VS16_PACKAGE_TYPE:=Community
+G_VS16_NETFXSDK_VERSION:=4.7.2
+G_VS16_TOOLS_VERSION:=14.21.27702
+G_VS16_KITS_VERSION:=10.0.17763.0
+
