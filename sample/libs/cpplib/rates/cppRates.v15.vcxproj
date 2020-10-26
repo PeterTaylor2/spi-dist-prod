@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{15D10B21-0124-11E5-BCEE-C4850839C16D}</ProjectGuid>
+    <RootNamespace>cppRates</RootNamespace>
+    <ProjectName>cppRates</ProjectName>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">win32\Debug\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make -j4 target COMPILER=msvc15 BITS=32 DEBUG=1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean COMPILER=msvc15 BITS=32 DEBUG=1 &amp;&amp; make -j4 target COMPILER=msvc15 BITS=32 DEBUG=1</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean COMPILER=msvc15 BITS=32 DEBUG=1</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..;$(MSBuildProjectDirectory)\..\..\..;$(MSBuildProjectDirectory)\..\..\..\3rdParty\spi;$(MSBuildProjectDirectory)\..;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">win32\Release\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make -j4 target COMPILER=msvc15 BITS=32</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean COMPILER=msvc15 BITS=32 &amp;&amp; make -j4 target COMPILER=msvc15 BITS=32</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean COMPILER=msvc15 BITS=32</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..;$(MSBuildProjectDirectory)\..\..\..;$(MSBuildProjectDirectory)\..\..\..\3rdParty\spi;$(MSBuildProjectDirectory)\..;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">win64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">win64\Debug\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make -j4 target COMPILER=msvc15 BITS=64 DEBUG=1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make clean COMPILER=msvc15 BITS=64 DEBUG=1 &amp;&amp; make -j4 target COMPILER=msvc15 BITS=64 DEBUG=1</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make clean COMPILER=msvc15 BITS=64 DEBUG=1</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..;$(MSBuildProjectDirectory)\..\..\..;$(MSBuildProjectDirectory)\..\..\..\3rdParty\spi;$(MSBuildProjectDirectory)\..;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">win64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">win64\Release\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make -j4 target COMPILER=msvc15 BITS=64</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make clean COMPILER=msvc15 BITS=64 &amp;&amp; make -j4 target COMPILER=msvc15 BITS=64</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make clean COMPILER=msvc15 BITS=64</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..;$(MSBuildProjectDirectory)\..\..\..;$(MSBuildProjectDirectory)\..\..\..\3rdParty\spi;$(MSBuildProjectDirectory)\..;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CashFlowList.cpp" />
+    <ClCompile Include="src\DiscountCurve.cpp" />
+    <ClCompile Include="src\IndexCurve.cpp" />
+    <ClCompile Include="src\RateType.cpp" />
+    <ClCompile Include="src\Swaps.cpp" />
+    <ClCompile Include="src\ZCBuild.cpp" />
+    <ClCompile Include="src\ZeroCurve.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CashFlowList.hpp" />
+    <ClInclude Include="DiscountCurve.hpp" />
+    <ClInclude Include="IndexCurve.hpp" />
+    <ClInclude Include="RateType.hpp" />
+    <ClInclude Include="Swaps.hpp" />
+    <ClInclude Include="ZCBuild.hpp" />
+    <ClInclude Include="ZeroCurve.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

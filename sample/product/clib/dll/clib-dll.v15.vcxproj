@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1F67AE80-DF81-11E2-842E-C4850839C16D}</ProjectGuid>
+    <RootNamespace>clib-dll</RootNamespace>
+    <ProjectName>clib-dll</ProjectName>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">win32\Debug\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make -j4 target COMPILER=msvc15 BITS=32 DEBUG=1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean COMPILER=msvc15 BITS=32 DEBUG=1 &amp;&amp; make -j4 target COMPILER=msvc15 BITS=32 DEBUG=1</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean COMPILER=msvc15 BITS=32 DEBUG=1</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..\..\..;$(MSBuildProjectDirectory)\..\..\..\libs\isda-cds\include;$(MSBuildProjectDirectory)\..\..\..\libs\isda-cds\errorHandler;$(MSBuildProjectDirectory)\..\..\..\libs;$(MSBuildProjectDirectory)\..\..\..\3rdParty\spi;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">win32\Release\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make -j4 target COMPILER=msvc15 BITS=32</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean COMPILER=msvc15 BITS=32 &amp;&amp; make -j4 target COMPILER=msvc15 BITS=32</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean COMPILER=msvc15 BITS=32</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..\..\..;$(MSBuildProjectDirectory)\..\..\..\libs\isda-cds\include;$(MSBuildProjectDirectory)\..\..\..\libs\isda-cds\errorHandler;$(MSBuildProjectDirectory)\..\..\..\libs;$(MSBuildProjectDirectory)\..\..\..\3rdParty\spi;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">win64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">win64\Debug\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make -j4 target COMPILER=msvc15 BITS=64 DEBUG=1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make clean COMPILER=msvc15 BITS=64 DEBUG=1 &amp;&amp; make -j4 target COMPILER=msvc15 BITS=64 DEBUG=1</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make clean COMPILER=msvc15 BITS=64 DEBUG=1</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..\..\..;$(MSBuildProjectDirectory)\..\..\..\libs\isda-cds\include;$(MSBuildProjectDirectory)\..\..\..\libs\isda-cds\errorHandler;$(MSBuildProjectDirectory)\..\..\..\libs;$(MSBuildProjectDirectory)\..\..\..\3rdParty\spi;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">win64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">win64\Release\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make -j4 target COMPILER=msvc15 BITS=64</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make clean COMPILER=msvc15 BITS=64 &amp;&amp; make -j4 target COMPILER=msvc15 BITS=64</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make clean COMPILER=msvc15 BITS=64</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..\..\..;$(MSBuildProjectDirectory)\..\..\..\libs\isda-cds\include;$(MSBuildProjectDirectory)\..\..\..\libs\isda-cds\errorHandler;$(MSBuildProjectDirectory)\..\..\..\libs;$(MSBuildProjectDirectory)\..\..\..\3rdParty\spi;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\clib_cashflow.cpp" />
+    <ClCompile Include="src\clib_cashflow_helper.cpp" />
+    <ClCompile Include="src\clib_clib_service_manager.cpp" />
+    <ClCompile Include="src\clib_dates.cpp" />
+    <ClCompile Include="src\clib_dates_helper.cpp" />
+    <ClCompile Include="src\clib_dateType.cpp" />
+    <ClCompile Include="src\clib_dateType_helper.cpp" />
+    <ClCompile Include="src\clib_holidays.cpp" />
+    <ClCompile Include="src\clib_holidays_helper.cpp" />
+    <ClCompile Include="src\clib_indexCurve.cpp" />
+    <ClCompile Include="src\clib_indexCurve_helper.cpp" />
+    <ClCompile Include="src\clib_math.cpp" />
+    <ClCompile Include="src\clib_math_helper.cpp" />
+    <ClCompile Include="src\clib_rates.cpp" />
+    <ClCompile Include="src\clib_rates_helper.cpp" />
+    <ClCompile Include="src\clib_version.cpp" />
+    <ClCompile Include="src\clib_version_helper.cpp" />
+    <ClCompile Include="src\clib_zcBuild.cpp" />
+    <ClCompile Include="src\clib_zcBuild_helper.cpp" />
+    <ClCompile Include="src\clib_zeroCurve.cpp" />
+    <ClCompile Include="src\clib_zeroCurve_helper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clib_cashflow.hpp" />
+    <ClInclude Include="clib_cashflow_classes.hpp" />
+    <ClInclude Include="clib_clib_service.hpp" />
+    <ClInclude Include="clib_dates.hpp" />
+    <ClInclude Include="clib_dates_classes.hpp" />
+    <ClInclude Include="clib_dateType.hpp" />
+    <ClInclude Include="clib_dateType_classes.hpp" />
+    <ClInclude Include="clib_holidays.hpp" />
+    <ClInclude Include="clib_holidays_classes.hpp" />
+    <ClInclude Include="clib_indexCurve.hpp" />
+    <ClInclude Include="clib_indexCurve_classes.hpp" />
+    <ClInclude Include="clib_math.hpp" />
+    <ClInclude Include="clib_math_classes.hpp" />
+    <ClInclude Include="clib_namespace.hpp" />
+    <ClInclude Include="clib_rates.hpp" />
+    <ClInclude Include="clib_rates_classes.hpp" />
+    <ClInclude Include="clib_version.hpp" />
+    <ClInclude Include="clib_version_classes.hpp" />
+    <ClInclude Include="clib_zcBuild.hpp" />
+    <ClInclude Include="clib_zcBuild_classes.hpp" />
+    <ClInclude Include="clib_zeroCurve.hpp" />
+    <ClInclude Include="clib_zeroCurve_classes.hpp" />
+    <ClInclude Include="src\clib_cashflow_helper.hpp" />
+    <ClInclude Include="src\clib_cashflow_helper_classes.hpp" />
+    <ClInclude Include="src\clib_clib_service_manager.hpp" />
+    <ClInclude Include="src\clib_clib_time_out.hpp" />
+    <ClInclude Include="src\clib_clib_type_converters.hpp" />
+    <ClInclude Include="src\clib_dates_helper.hpp" />
+    <ClInclude Include="src\clib_dates_helper_classes.hpp" />
+    <ClInclude Include="src\clib_dateType_helper.hpp" />
+    <ClInclude Include="src\clib_dateType_helper_classes.hpp" />
+    <ClInclude Include="src\clib_holidays_helper.hpp" />
+    <ClInclude Include="src\clib_holidays_helper_classes.hpp" />
+    <ClInclude Include="src\clib_indexCurve_helper.hpp" />
+    <ClInclude Include="src\clib_indexCurve_helper_classes.hpp" />
+    <ClInclude Include="src\clib_math_helper.hpp" />
+    <ClInclude Include="src\clib_math_helper_classes.hpp" />
+    <ClInclude Include="src\clib_rates_helper.hpp" />
+    <ClInclude Include="src\clib_rates_helper_classes.hpp" />
+    <ClInclude Include="src\clib_version_helper.hpp" />
+    <ClInclude Include="src\clib_version_helper_classes.hpp" />
+    <ClInclude Include="src\clib_zcBuild_helper.hpp" />
+    <ClInclude Include="src\clib_zcBuild_helper_classes.hpp" />
+    <ClInclude Include="src\clib_zeroCurve_helper.hpp" />
+    <ClInclude Include="src\clib_zeroCurve_helper_classes.hpp" />
+    <ClInclude Include="clib_clib_decl_spec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="properties.mk" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

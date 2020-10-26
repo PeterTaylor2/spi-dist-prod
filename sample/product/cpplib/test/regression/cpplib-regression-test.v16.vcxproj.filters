@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="baseline">
+      <UniqueIdentifier>{21ea0936-0543-4f8e-9d46-c0d96fca34e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inputs">
+      <UniqueIdentifier>{545a75fb-3a53-46cc-be3f-7d2a8e826753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers">
+      <UniqueIdentifier>{29acce84-c859-4a61-a142-7c8e8960d6b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="baseline\date.out">
+      <Filter>baseline</Filter>
+    </None>
+    <None Include="baseline\dateInterval.out">
+      <Filter>baseline</Filter>
+    </None>
+    <None Include="baseline\dateList.out">
+      <Filter>baseline</Filter>
+    </None>
+    <None Include="baseline\dayCountConv.out">
+      <Filter>baseline</Filter>
+    </None>
+    <None Include="baseline\holidays.out">
+      <Filter>baseline</Filter>
+    </None>
+    <None Include="baseline\mathAdd.out">
+      <Filter>baseline</Filter>
+    </None>
+    <None Include="baseline\mathBinaryOp.out">
+      <Filter>baseline</Filter>
+    </None>
+    <None Include="baseline\swapFixedFlows.out">
+      <Filter>baseline</Filter>
+    </None>
+    <None Include="baseline\swapRate.out">
+      <Filter>baseline</Filter>
+    </None>
+    <None Include="baseline\zcBuild.out">
+      <Filter>baseline</Filter>
+    </None>
+    <None Include="baseline\zeroCurve.out">
+      <Filter>baseline</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inputs\date.inp">
+      <Filter>inputs</Filter>
+    </None>
+    <None Include="inputs\dateInterval.inp">
+      <Filter>inputs</Filter>
+    </None>
+    <None Include="inputs\dateList.inp">
+      <Filter>inputs</Filter>
+    </None>
+    <None Include="inputs\dayCountConv.inp">
+      <Filter>inputs</Filter>
+    </None>
+    <None Include="inputs\holidays.inp">
+      <Filter>inputs</Filter>
+    </None>
+    <None Include="inputs\mathAdd.inp">
+      <Filter>inputs</Filter>
+    </None>
+    <None Include="inputs\mathBinaryOp.inp">
+      <Filter>inputs</Filter>
+    </None>
+    <None Include="inputs\swapFixedFlows.inp">
+      <Filter>inputs</Filter>
+    </None>
+    <None Include="inputs\swapRate.inp">
+      <Filter>inputs</Filter>
+    </None>
+    <None Include="inputs\zcBuild.inp">
+      <Filter>inputs</Filter>
+    </None>
+    <None Include="inputs\zeroCurve.inp">
+      <Filter>inputs</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="drivers\date.py">
+      <Filter>drivers</Filter>
+    </None>
+    <None Include="drivers\dateInterval.py">
+      <Filter>drivers</Filter>
+    </None>
+    <None Include="drivers\dateList.py">
+      <Filter>drivers</Filter>
+    </None>
+    <None Include="drivers\dayCountConv.py">
+      <Filter>drivers</Filter>
+    </None>
+    <None Include="drivers\holidays.py">
+      <Filter>drivers</Filter>
+    </None>
+    <None Include="drivers\mathAdd.py">
+      <Filter>drivers</Filter>
+    </None>
+    <None Include="drivers\mathBinaryOp.py">
+      <Filter>drivers</Filter>
+    </None>
+    <None Include="drivers\swapFixedFlows.py">
+      <Filter>drivers</Filter>
+    </None>
+    <None Include="drivers\swapRate.py">
+      <Filter>drivers</Filter>
+    </None>
+    <None Include="drivers\zcBuild.py">
+      <Filter>drivers</Filter>
+    </None>
+    <None Include="drivers\zeroCurve.py">
+      <Filter>drivers</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+</Project>

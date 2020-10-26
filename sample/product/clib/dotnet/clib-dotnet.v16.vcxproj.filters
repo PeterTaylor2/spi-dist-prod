@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b681c54a-b941-4c95-af4c-1395fd279402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f76bfd65-0e3a-4271-81ff-bc5e0ef097f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\clib_assembly_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\clib_cli_service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cashflow.inl">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dates.inl">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dateType.inl">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\holidays.inl">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\indexCurve.inl">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math.inl">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rates.inl">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\version.inl">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zcBuild.inl">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zeroCurve.inl">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\clib_cli_service.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+</Project>

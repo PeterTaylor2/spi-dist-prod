@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{703195B0-915F-11E9-B4FF-34E12D458C69}</ProjectGuid>
+    <RootNamespace>clib-regression-test</RootNamespace>
+    <ProjectName>clib-regression-test</ProjectName>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make all COMPILER=msvc16 BITS=32 DEBUG=1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean COMPILER=msvc16 BITS=32 DEBUG=1 &amp;&amp; make all COMPILER=msvc16 BITS=32 DEBUG=1</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean COMPILER=msvc16 BITS=32 DEBUG=1</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make all COMPILER=msvc16 BITS=32</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean COMPILER=msvc16 BITS=32 &amp;&amp; make all COMPILER=msvc16 BITS=32</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean COMPILER=msvc16 BITS=32</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make all COMPILER=msvc16 BITS=64 DEBUG=1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make clean COMPILER=msvc16 BITS=64 DEBUG=1 &amp;&amp; make all COMPILER=msvc16 BITS=64 DEBUG=1</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make clean COMPILER=msvc16 BITS=64 DEBUG=1</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make all COMPILER=msvc16 BITS=64</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make clean COMPILER=msvc16 BITS=64 &amp;&amp; make all COMPILER=msvc16 BITS=64</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make clean COMPILER=msvc16 BITS=64</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Makefile"/>
+    <None Include="baseline\date.out"/>
+    <None Include="baseline\dateInterval.out"/>
+    <None Include="baseline\dateList.out"/>
+    <None Include="baseline\dayCountConv.out"/>
+    <None Include="baseline\holidays.out"/>
+    <None Include="baseline\mathAdd.out"/>
+    <None Include="baseline\mathBinaryOp.out"/>
+    <None Include="baseline\swapFixedFlows.out"/>
+    <None Include="baseline\swapRate.out"/>
+    <None Include="baseline\zcBuild.out"/>
+    <None Include="baseline\zeroCurve.out"/>
+    <None Include="drivers\date.py"/>
+    <None Include="drivers\dateInterval.py"/>
+    <None Include="drivers\dateList.py"/>
+    <None Include="drivers\dayCountConv.py"/>
+    <None Include="drivers\holidays.py"/>
+    <None Include="drivers\mathAdd.py"/>
+    <None Include="drivers\mathBinaryOp.py"/>
+    <None Include="drivers\swapFixedFlows.py"/>
+    <None Include="drivers\swapRate.py"/>
+    <None Include="drivers\zcBuild.py"/>
+    <None Include="drivers\zeroCurve.py"/>
+    <None Include="inputs\date.inp"/>
+    <None Include="inputs\dateInterval.inp"/>
+    <None Include="inputs\dateList.inp"/>
+    <None Include="inputs\dayCountConv.inp"/>
+    <None Include="inputs\holidays.inp"/>
+    <None Include="inputs\mathAdd.inp"/>
+    <None Include="inputs\mathBinaryOp.inp"/>
+    <None Include="inputs\swapFixedFlows.inp"/>
+    <None Include="inputs\swapRate.inp"/>
+    <None Include="inputs\zcBuild.inp"/>
+    <None Include="inputs\zeroCurve.inp"/>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

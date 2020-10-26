@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FAB7A38C-1092-11EB-850E-DCFE07D3132C}</ProjectGuid>
+    <RootNamespace>qlLite</RootNamespace>
+    <ProjectName>qlLite</ProjectName>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">win32\Debug\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make -j4 target COMPILER=msvc16 BITS=32 DEBUG=1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean COMPILER=msvc16 BITS=32 DEBUG=1 &amp;&amp; make -j4 target COMPILER=msvc16 BITS=32 DEBUG=1</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean COMPILER=msvc16 BITS=32 DEBUG=1</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory)\ql\time;$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..\..\..\..\boost-build\ql-boost;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.24.28314\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">win32\Release\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make -j4 target COMPILER=msvc16 BITS=32</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean COMPILER=msvc16 BITS=32 &amp;&amp; make -j4 target COMPILER=msvc16 BITS=32</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean COMPILER=msvc16 BITS=32</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory)\ql\time;$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..\..\..\..\boost-build\ql-boost;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.24.28314\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">win64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">win64\Debug\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make -j4 target COMPILER=msvc16 BITS=64 DEBUG=1</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make clean COMPILER=msvc16 BITS=64 DEBUG=1 &amp;&amp; make -j4 target COMPILER=msvc16 BITS=64 DEBUG=1</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">make clean COMPILER=msvc16 BITS=64 DEBUG=1</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory)\ql\time;$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..\..\..\..\boost-build\ql-boost;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.24.28314\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared</NMakeIncludeSearchPath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">win64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">win64\Release\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make -j4 target COMPILER=msvc16 BITS=64</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make clean COMPILER=msvc16 BITS=64 &amp;&amp; make -j4 target COMPILER=msvc16 BITS=64</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|x64'">make clean COMPILER=msvc16 BITS=64</NMakeCleanCommandLine>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\3rdParty\spi\build-win32\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>$(MSBuildProjectDirectory)\ql\time;$(MSBuildProjectDirectory);$(MSBuildProjectDirectory)\..\..\..\..\boost-build\ql-boost;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.24.28314\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ql\time\date.cpp" />
+    <ClCompile Include="ql\time\frequency.cpp" />
+    <ClCompile Include="ql\time\period.cpp" />
+    <ClCompile Include="ql\time\timeunit.cpp" />
+    <ClCompile Include="ql\time\weekday.cpp" />
+    <ClCompile Include="ql\utilities\dataformatters.cpp" />
+    <ClCompile Include="ql\math\matrix.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ql\time\date.hpp" />
+    <ClInclude Include="ql\time\frequency.hpp" />
+    <ClInclude Include="ql\time\period.hpp" />
+    <ClInclude Include="ql\time\timeunit.hpp" />
+    <ClInclude Include="ql\time\weekday.hpp" />
+    <ClInclude Include="ql\utilities\dataformatters.hpp" />
+    <ClInclude Include="ql\utilities\disposable.hpp" />
+    <ClInclude Include="ql\utilities\null.hpp" />
+    <ClInclude Include="ql\utilities\steppingiterator.hpp" />
+    <ClInclude Include="ql\math\array.hpp" />
+    <ClInclude Include="ql\math\matrix.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
