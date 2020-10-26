@@ -1,0 +1,75 @@
+Permutation 1 of 4
+dates:                [2014-04-01, 2014-07-01, 2014-10-01]
+addDates:             [2014-10-01, 2015-01-01]
+
+DateList (dates)
+NumItems: 3
+ 1: 2014-04-01
+ 2: 2014-07-01
+ 3: 2014-10-01
+
+DateList (addDates)
+NumItems: 2
+ 1: 2014-10-01
+ 2: 2015-01-01
+
+DateList (mergeDates)
+NumItems: 4
+ 1: 2014-04-01
+ 2: 2014-07-01
+ 3: 2014-10-01
+ 4: 2015-01-01
+
+
+Permutation 2 of 4
+dates:                [2014-04-01, 2014-07-01, 2014-10-01]
+addDates:             []
+
+DateList (dates)
+NumItems: 3
+ 1: 2014-04-01
+ 2: 2014-07-01
+ 3: 2014-10-01
+
+DateList (addDates)
+None
+
+DateList (mergeDates)
+NumItems: 3
+ 1: 2014-04-01
+ 2: 2014-07-01
+ 3: 2014-10-01
+
+
+Permutation 3 of 4
+dates:                []
+addDates:             [2014-10-01, 2015-01-01]
+
+DateList (dates)
+None
+
+DateList (addDates)
+NumItems: 2
+ 1: 2014-10-01
+ 2: 2015-01-01
+
+DateList (mergeDates)
+NumItems: 2
+ 1: 2014-10-01
+ 2: 2015-01-01
+
+
+Permutation 4 of 4
+dates:                []
+addDates:             []
+
+DateList (dates)
+None
+
+DateList (addDates)
+None
+
+DateList (mergeDates)
+None
+
+

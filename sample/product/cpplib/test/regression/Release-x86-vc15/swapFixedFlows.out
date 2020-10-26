@@ -1,0 +1,60 @@
+Permutation 1 of 2
+couponRate:           0.02
+startDate:            2015-03-31
+couponInterval:       6M
+maturityDate:         2020-03-31
+dayCountConv:         30/360
+frontStub:            None
+shortStub:            None
+subtractInitial:      None
+keepStartDate:        None
+addFinal:             True
+accBadDayConv:        M
+payBadDayConv:        M
+holidays:             HOLIDAY.USD
+
+CashFlowList (fixedFlows)
+NumItems: 10
+Date       Amount
+========== ==========
+2015-09-30   0.010000
+2016-03-31   0.010000
+2016-09-30   0.010000
+2017-03-31   0.010000
+2017-09-29   0.009944
+2018-03-30   0.010056
+2018-09-28   0.009889
+2019-03-29   0.010056
+2019-09-30   0.010056
+2020-03-31   1.010000
+
+Permutation 2 of 2
+couponRate:           0.02
+startDate:            2015-03-31
+couponInterval:       6M
+maturityDate:         2020-03-31
+dayCountConv:         30/360
+frontStub:            None
+shortStub:            None
+subtractInitial:      None
+keepStartDate:        None
+addFinal:             True
+accBadDayConv:        N
+payBadDayConv:        M
+holidays:             HOLIDAY.USD
+
+CashFlowList (fixedFlows)
+NumItems: 10
+Date       Amount
+========== ==========
+2015-09-30   0.010000
+2016-03-31   0.010000
+2016-09-30   0.010000
+2017-03-31   0.010000
+2017-09-29   0.010000
+2018-03-30   0.010000
+2018-09-28   0.010000
+2019-03-29   0.010000
+2019-09-30   0.010000
+2020-03-31   1.010000
+

@@ -1,0 +1,66 @@
+Permutation 1 of 3
+holidays:             HOLIDAY.USD
+startDate:            2014-11-27
+endDate:              2014-12-24
+offset:               31
+badDayConv:           M
+interval:             1M
+adjType:              B
+dateOrInterval:       1M,M
+
+NumberOfDates: 114
+IsBusinessDay: False
+IsHoliday:     True
+IsWeekend:     False
+BusDaysDiff:   19
+BusinessDay:   2014-11-28
+AddBusDays:    2015-01-13
+DateFwdBus:    2014-12-29
+DateFwdAdj:    2015-01-13
+DOIEndDate:    2014-12-29
+BusinessEOM:   2014-11-28
+
+Permutation 2 of 3
+holidays:             HOLIDAY.GBP
+startDate:            2014-11-27
+endDate:              2014-12-24
+offset:               31
+badDayConv:           M
+interval:             1M
+adjType:              B
+dateOrInterval:       1M,M
+
+NumberOfDates: 96
+IsBusinessDay: True
+IsHoliday:     False
+IsWeekend:     False
+BusDaysDiff:   19
+BusinessDay:   2014-11-27
+AddBusDays:    2015-01-14
+DateFwdBus:    2014-12-29
+DateFwdAdj:    2015-01-14
+DOIEndDate:    2014-12-29
+BusinessEOM:   2014-11-28
+
+Permutation 3 of 3
+holidays:             NONE
+startDate:            2014-11-27
+endDate:              2014-12-24
+offset:               31
+badDayConv:           M
+interval:             1M
+adjType:              B
+dateOrInterval:       1M,M
+
+NumberOfDates: 0
+IsBusinessDay: True
+IsHoliday:     False
+IsWeekend:     False
+BusDaysDiff:   19
+BusinessDay:   2014-11-27
+AddBusDays:    2015-01-09
+DateFwdBus:    2014-12-29
+DateFwdAdj:    2015-01-09
+DOIEndDate:    2014-12-29
+BusinessEOM:   2014-11-28
+

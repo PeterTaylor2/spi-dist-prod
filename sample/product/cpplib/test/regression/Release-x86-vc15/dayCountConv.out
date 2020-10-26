@@ -1,0 +1,111 @@
+Permutation 1 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         ACTUAL/365F
+
+DayCountFraction: 0.704110
+DaysDiff:         257
+
+Permutation 2 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         ACT/365F
+
+DayCountFraction: 0.704110
+DaysDiff:         257
+
+Permutation 3 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         A/365F
+
+DayCountFraction: 0.704110
+DaysDiff:         257
+
+Permutation 4 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         ACTUAL/360
+
+DayCountFraction: 0.713889
+DaysDiff:         257
+
+Permutation 5 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         ACT/360
+
+DayCountFraction: 0.713889
+DaysDiff:         257
+
+Permutation 6 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         A/360
+
+DayCountFraction: 0.713889
+DaysDiff:         257
+
+Permutation 7 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         ACTUAL/ACTUAL
+
+DayCountFraction: 0.704110
+DaysDiff:         257
+
+Permutation 8 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         ACT/ACT
+
+DayCountFraction: 0.704110
+DaysDiff:         257
+
+Permutation 9 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         A/A
+
+DayCountFraction: 0.704110
+DaysDiff:         257
+
+Permutation 10 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         30/360
+
+DayCountFraction: 0.705556
+DaysDiff:         254
+
+Permutation 11 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         B30/360
+
+DayCountFraction: 0.705556
+DaysDiff:         254
+
+Permutation 12 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         30E/360
+
+DayCountFraction: 0.705556
+DaysDiff:         254
+
+Permutation 13 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         B30E/360
+
+DayCountFraction: 0.705556
+DaysDiff:         254
+
+Permutation 14 of 14
+startDate:            2015-01-01
+endDate:              2015-09-15
+dayCountConv:         NOT_A_DAY_COUNT_CONV
+
+ERROR: "NOT_A_DAY_COUNT_CONV" could not be converted to 'DCC'
+

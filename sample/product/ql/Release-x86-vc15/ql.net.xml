@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>ql.net</assembly>
+  <members>
+    <member name="M:SPI.Object.to_string(System.String, System.String)">
+       <summary>
+Serializes the object to string using the given format.
+       </summary>
+       <param name="format">
+Optional. Object string format.
+       </param>
+       <param name="options">
+Optional. Extra options for the given format.
+       </param>
+    </member>
+    <member name="M:SPI.Object.to_file(System.String,System.String,System.String)">
+       <summary>
+Serializes the object to file using the given format.
+       </summary>
+       <param name="filename">
+Name of the file to be written.
+       </param>
+       <param name="format">
+Optional. Object file format.
+       </param>
+       <param name="options">
+Optional. Extra options for the given format.
+       </param>
+    </member>
+    <member name="M:sartorial.ql.Version(System.Nullable{System.Boolean})">
+      <summary>
+Shows the version number. You can request details of the build as well.
+      </summary>
+      <param name="showDetails">
+        <summary>
+Optional. Default = True.
+Show build details as well as just the version number
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.ql.Timestamp()">
+      <summary>
+Shows the timestamp of the build. This is just for one file of the build, so for this to be accurate you will need to have done a full re-build!
+      </summary>
+    </member>
+    <member name="M:sartorial.ql.Add(System.Double,System.Double)">
+      <summary>
+Adds two numbers together.
+      </summary>
+      <param name="x">
+        <summary>
+First number to be summed.
+        </summary>
+      </param>
+      <param name="y">
+        <summary>
+Second number to be summed.
+        </summary>
+      </param>
+    </member>
+    <member name="F:sartorial.ql.BinaryOperator.Add" />
+    <member name="F:sartorial.ql.BinaryOperator.Subtract" />
+    <member name="F:sartorial.ql.BinaryOperator.Multiply" />
+    <member name="F:sartorial.ql.BinaryOperator.Divide" />
+    <member name="F:sartorial.ql.BinaryOperator.Power" />
+    <member name="T:sartorial.ql.BinaryOperator">
+      <summary>
+Defines a binary operation.
+      </summary>
+    </member>
+    <member name="M:sartorial.ql.BinaryOp(System.Double,sartorial.ql.BinaryOperator,System.Double)">
+      <summary>
+Binary operation on two numbers.
+      </summary>
+      <param name="x" />
+      <param name="op" />
+      <param name="y" />
+    </member>
+    <member name="T:sartorial.ql.Matrix" />
+    <member name="M:sartorial.ql.Matrix.#ctor(System.Double[0:,0:])">
+      <param name="data" />
+    </member>
+    <member name="M:sartorial.ql.Matrix.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.ql.Matrix.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.ql.Matrix.data" />
+    <member name="M:sartorial.ql.Determinant(System.Double[0:,0:])">
+      <param name="matrix" />
+    </member>
+    <member name="M:sartorial.ql.MatrixMultiply(System.Double[0:,0:],System.Double[0:,0:])">
+      <param name="m1" />
+      <param name="m2" />
+    </member>
+    <member name="M:sartorial.ql.DateToString(System.DateTime)">
+      <summary>
+Tests that the QuantLib date format gives the correct date. We do this by using QuantLib's own date serialisation methods.
+      </summary>
+      <param name="date" />
+    </member>
+  </members>
+</doc>

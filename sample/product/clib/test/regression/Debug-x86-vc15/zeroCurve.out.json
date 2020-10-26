@@ -1,0 +1,8 @@
+{
+    "startTime": "Mon Oct 26 02:20:42 2020",
+    "ifn": "inputs\\zeroCurve.inp",
+    "ofn": "Debug-x86-vc15\\zeroCurve.out",
+    "numPerms": 2,
+    "failToRun": 0,
+    "elapsedTime": 0.0004976999999999898
+}

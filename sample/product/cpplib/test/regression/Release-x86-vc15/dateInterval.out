@@ -1,0 +1,22 @@
+Permutation 1 of 2
+date:                 2015-04-30
+dateInterval:         3M
+
+DateIntervalYears:   0.250000
+DateIntervalFreq:    4.000000
+AddDateInterval(1):  2015-07-30
+AddDateInterval(4):  2016-04-30
+AddDateInterval(0):  2015-04-30
+AddDateInterval(-1): 2015-01-30
+
+Permutation 2 of 2
+date:                 2015-02-28
+dateInterval:         3M
+
+DateIntervalYears:   0.250000
+DateIntervalFreq:    4.000000
+AddDateInterval(1):  2015-05-28
+AddDateInterval(4):  2016-02-28
+AddDateInterval(0):  2015-02-28
+AddDateInterval(-1): 2014-11-28
+

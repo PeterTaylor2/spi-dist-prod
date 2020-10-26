@@ -1,0 +1,1198 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>clib.net</assembly>
+  <members>
+    <member name="M:SPI.Object.to_string(System.String, System.String)">
+       <summary>
+Serializes the object to string using the given format.
+       </summary>
+       <param name="format">
+Optional. Object string format.
+       </param>
+       <param name="options">
+Optional. Extra options for the given format.
+       </param>
+    </member>
+    <member name="M:SPI.Object.to_file(System.String,System.String,System.String)">
+       <summary>
+Serializes the object to file using the given format.
+       </summary>
+       <param name="filename">
+Name of the file to be written.
+       </param>
+       <param name="format">
+Optional. Object file format.
+       </param>
+       <param name="options">
+Optional. Extra options for the given format.
+       </param>
+    </member>
+    <member name="M:sartorial.clib.Date(System.Int32,System.Int32,System.Int32)">
+      <summary>
+Constructs a date from year, month and day using the Gregorian calendar.
+      </summary>
+      <param name="year">
+        <summary>
+Year A.D. - usually with 4 digits
+        </summary>
+      </param>
+      <param name="month">
+        <summary>
+Month - 1 = January, 12 = December etc.
+        </summary>
+      </param>
+      <param name="day">
+        <summary>
+Day of the month, from 1 to 31. It is an error to use a number more than the days in the particular month.
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.Version(System.Nullable{System.Boolean})">
+      <summary>
+Shows the version number as a string. You can request details of the build as well.
+      </summary>
+      <param name="showDetails">
+        <summary>
+Optional. Default = True.
+Show build details as well as just the version number
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.Timestamp()">
+      <summary>
+Shows the timestamp of the build.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.UserName()">
+    </member>
+    <member name="M:sartorial.clib.ComputerName()">
+    </member>
+    <member name="M:sartorial.clib.UserGroups(System.Nullable{System.String},System.Nullable{System.String})">
+      <param name="serverName">
+        <summary>
+Optional. Default = "".
+        </summary>
+      </param>
+      <param name="userName">
+        <summary>
+Optional. Default = "".
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.FileTime(System.String)">
+      <param name="filename" />
+    </member>
+    <member name="M:sartorial.clib.Now()">
+    </member>
+    <member name="M:sartorial.clib.DateTimeDiff(System.DateTime,System.DateTime)">
+      <param name="one" />
+      <param name="two" />
+    </member>
+    <member name="M:sartorial.clib.Math.Add(System.Double,System.Double,System.Nullable{System.Double})">
+      <summary>
+Adds upto three numbers together.
+      </summary>
+      <param name="x">
+        <summary>
+First number to be summed.
+        </summary>
+      </param>
+      <param name="y">
+        <summary>
+Second number to be summed.
+        </summary>
+      </param>
+      <param name="z">
+        <summary>
+Optional. Default = 0.
+Third number to be summed - if not provided then it will use 0.
+        </summary>
+      </param>
+    </member>
+    <member name="F:sartorial.clib.Math.BinaryOperator.Add">
+      <summary>
+Adds two number together
+      </summary>
+    </member>
+    <member name="F:sartorial.clib.Math.BinaryOperator.Subtract">
+      <summary>
+Subtracts the second number from the first number
+      </summary>
+    </member>
+    <member name="F:sartorial.clib.Math.BinaryOperator.Multiply">
+      <summary>
+Multiplies two numbers together
+      </summary>
+    </member>
+    <member name="F:sartorial.clib.Math.BinaryOperator.Divide">
+      <summary>
+Divides the first number by the second number
+      </summary>
+    </member>
+    <member name="F:sartorial.clib.Math.BinaryOperator.Power">
+      <summary>
+Raises the first number to the power of the second number
+      </summary>
+    </member>
+    <member name="T:sartorial.clib.Math.BinaryOperator">
+      <summary>
+Defines a binary operation.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.Math.BinaryOp(System.Double,sartorial.clib.Math.BinaryOperator,System.Double)">
+      <summary>
+Performs a binary operation on two numbers - return x op y.
+      </summary>
+      <param name="x">
+        <summary>
+The first number
+        </summary>
+      </param>
+      <param name="op">
+        <summary>
+The binary operator applied
+        </summary>
+      </param>
+      <param name="y">
+        <summary>
+The second number
+        </summary>
+      </param>
+    </member>
+    <member name="T:sartorial.clib.Math.Matrix">
+      <summary>
+Defines a Matrix object consisting of a rectangular array of real numbers.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.Math.Matrix.#ctor(System.Double[0:,0:])">
+      <param name="data">
+        <summary>
+The data is a two-dimensional rectangular array of doubles.
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.Math.Matrix.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.Math.Matrix.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.Math.Matrix.data">
+      <summary>
+The data is a two-dimensional rectangular array of doubles.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.Math.Matrix.Data()">
+      <summary>
+Returns all the data for the matrix.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.Math.Matrix.Cell(System.Int32,System.Int32)">
+      <summary>
+Returns an individual cell of the matrix.
+      </summary>
+      <param name="i" />
+      <param name="j" />
+    </member>
+    <member name="M:sartorial.clib.Math.Matrix.Rows()">
+      <summary>
+Returns the number of rows of the matrix.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.Math.Matrix.Cols()">
+      <summary>
+Returns the number of columns of the matrix.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.Math.Matrix.Size(System.Int32@,System.Int32@)">
+      <param name="rows" />
+      <param name="cols" />
+    </member>
+    <member name="M:sartorial.clib.Math.LinearInterp(System.Int32[],System.Double[],System.Double)">
+      <param name="xs" />
+      <param name="fxs" />
+      <param name="x" />
+    </member>
+    <member name="M:sartorial.clib.ClockTime()">
+      <summary>
+Returns the clock time since the start of execution.
+      </summary>
+    </member>
+    <member name="F:sartorial.clib.Weekday.MONDAY" />
+    <member name="F:sartorial.clib.Weekday.TUESDAY" />
+    <member name="F:sartorial.clib.Weekday.WEDNESDAY" />
+    <member name="F:sartorial.clib.Weekday.THURSDAY" />
+    <member name="F:sartorial.clib.Weekday.FRIDAY" />
+    <member name="F:sartorial.clib.Weekday.SATURDAY" />
+    <member name="F:sartorial.clib.Weekday.SUNDAY" />
+    <member name="T:sartorial.clib.Weekday" />
+    <member name="M:sartorial.clib.DayOfWeek(System.DateTime)">
+      <summary>
+Returns the day of the week as a number from 0 to 6, 0=Sunday, 1=Monday etc.
+      </summary>
+      <param name="date">
+        <summary>
+Date for which we are calculating the day of the week.
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.DaysInMonth(System.Int32,System.Int32)">
+      <summary>
+Returns the number of days in the month as a number from 1 to 31 using the Gregorian calendar.
+      </summary>
+      <param name="year">
+        <summary>
+Year A.D. - typically 4 digits
+        </summary>
+      </param>
+      <param name="month">
+        <summary>
+Month from 1 to 12. 1=January, 12=December etc
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.DateToEOM(System.DateTime,System.DateTime@)">
+      <summary>
+Returns the last day of the month
+      </summary>
+      <param name="date">
+        <summary>
+The date for which we are calculating the last day of the month
+        </summary>
+      </param>
+      <param name="eom">
+        <summary>
+The last day of the month as output
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.YMD(System.DateTime,System.Int32@,System.Int32@,System.Int32@)">
+      <param name="date" />
+      <param name="year" />
+      <param name="month" />
+      <param name="day" />
+    </member>
+    <member name="M:sartorial.clib.Year(System.DateTime,System.Int32@)">
+      <param name="date" />
+      <param name="year" />
+    </member>
+    <member name="M:sartorial.clib.StartOfYear(System.Int32,System.DateTime@)">
+      <param name="year" />
+      <param name="startOfYear" />
+    </member>
+    <member name="M:sartorial.clib.StartOfMonths(System.Int32,System.DateTime[]@)">
+      <param name="year" />
+      <param name="startOfMonths" />
+    </member>
+    <member name="T:sartorial.clib.DayCountConv">
+      <summary>
+Day count convention.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.DayCountConv.#ctor(System.String)">
+      <param name="name" />
+    </member>
+    <member name="M:sartorial.clib.DayCountConv.op_Implicit(System.String)~sartorial.clib.DayCountConv">
+    </member>
+    <member name="M:sartorial.clib.DayCountConv.op_Implicit(System.Int32)~sartorial.clib.DayCountConv">
+    </member>
+    <member name="M:sartorial.clib.DayCountConv.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.DayCountConv.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.DayCountConv.name" />
+    <member name="P:sartorial.clib.DayCountConv.id" />
+    <member name="M:sartorial.clib.DayCountFraction(System.DateTime,System.DateTime,sartorial.clib.DayCountConv)">
+      <summary>
+Computes the day count fraction as a number of years between two dates using a day count convention.
+      </summary>
+      <param name="startDate">
+        <summary>
+Start date.
+        </summary>
+      </param>
+      <param name="endDate">
+        <summary>
+End date.
+        </summary>
+      </param>
+      <param name="dcc">
+        <summary>
+Day count convention.
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.DaysDiff(System.DateTime,System.DateTime,sartorial.clib.DayCountConv)">
+      <summary>
+Computes the number of days difference between two dates using a day count convention.
+      </summary>
+      <param name="startDate">
+        <summary>
+Start date.
+        </summary>
+      </param>
+      <param name="endDate">
+        <summary>
+End date.
+        </summary>
+      </param>
+      <param name="dcc">
+        <summary>
+Day count convention.
+        </summary>
+      </param>
+    </member>
+    <member name="T:sartorial.clib.DateInterval" />
+    <member name="M:sartorial.clib.DateInterval.#ctor(System.String)">
+      <param name="name" />
+    </member>
+    <member name="M:sartorial.clib.DateInterval.op_Implicit(System.String)~sartorial.clib.DateInterval">
+    </member>
+    <member name="M:sartorial.clib.DateInterval.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.DateInterval.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.DateInterval.name" />
+    <member name="P:sartorial.clib.DateInterval.units" />
+    <member name="P:sartorial.clib.DateInterval.periods" />
+    <member name="M:sartorial.clib.DateInterval.Make(System.Int32,System.SByte)">
+      <summary>
+Constructs DateInterval from number of periods and period type.
+      </summary>
+      <param name="numPeriods">
+        <summary>
+Number of periods.
+        </summary>
+      </param>
+      <param name="periodType">
+        <summary>
+Period type, e.g. M,D,W,Y etc.
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.DateIntervalFreq(sartorial.clib.DateInterval)">
+      <summary>
+Converts a date interval into a frequency of payments per year.
+      </summary>
+      <param name="interval" />
+    </member>
+    <member name="M:sartorial.clib.DateIntervalYears(sartorial.clib.DateInterval)">
+      <summary>
+Converts a date interval into a number of years.
+      </summary>
+      <param name="interval" />
+    </member>
+    <member name="M:sartorial.clib.AddDateInterval(System.DateTime,sartorial.clib.DateInterval,System.Nullable{System.Int32})">
+      <summary>
+Adds a date interval to a given date.
+      </summary>
+      <param name="startDate">
+        <summary>
+Start date.
+        </summary>
+      </param>
+      <param name="ivl">
+        <summary>
+Date interval to add.
+        </summary>
+      </param>
+      <param name="count">
+        <summary>
+Optional. Default = 1.
+Number of intervals to add (default = 1)
+        </summary>
+      </param>
+    </member>
+    <member name="T:sartorial.clib.DateList" />
+    <member name="M:sartorial.clib.DateList.#ctor(System.DateTime[])">
+      <param name="dates" />
+    </member>
+    <member name="M:sartorial.clib.DateList.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.DateList.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.DateList.dates" />
+    <member name="P:sartorial.clib.DateList.numItems" />
+    <member name="M:sartorial.clib.DateListMerge(System.Nullable{sartorial.clib.DateList},System.Nullable{sartorial.clib.DateList})">
+      <param name="dateList1">
+        <summary>
+Optional. 
+        </summary>
+      </param>
+      <param name="dateList2">
+        <summary>
+Optional. 
+        </summary>
+      </param>
+    </member>
+    <member name="F:sartorial.clib.BadDayConv.FOLLOW" />
+    <member name="F:sartorial.clib.BadDayConv.PREVIOUS" />
+    <member name="F:sartorial.clib.BadDayConv.NONE" />
+    <member name="F:sartorial.clib.BadDayConv.MODIFIED" />
+    <member name="T:sartorial.clib.BadDayConv">
+      <summary>
+Bad day convention.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.HolidaysGetDates(System.String)">
+      <param name="holidays" />
+    </member>
+    <member name="M:sartorial.clib.HolidaysLoadFile(System.String)">
+      <summary>
+This function loads a holiday file into memory. This is particularly useful if the holiday file has changed on the disk.
+      </summary>
+      <param name="fileName" />
+    </member>
+    <member name="M:sartorial.clib.IsBusinessDay(System.DateTime,System.String)">
+      <param name="date" />
+      <param name="holidays" />
+    </member>
+    <member name="M:sartorial.clib.IsHoliday(System.DateTime,System.String)">
+      <param name="date" />
+      <param name="holidays" />
+    </member>
+    <member name="M:sartorial.clib.IsWeekend(System.DateTime)">
+      <param name="date" />
+    </member>
+    <member name="M:sartorial.clib.BusDaysDiff(System.DateTime,System.DateTime,System.String)">
+      <summary>
+Calculates the number of business days between two dates (FROM &amp; TO).
+      </summary>
+      <param name="fromDate" />
+      <param name="toDate" />
+      <param name="holidays" />
+    </member>
+    <member name="M:sartorial.clib.BusinessDay(System.DateTime,sartorial.clib.BadDayConv,System.String)">
+      <param name="date" />
+      <param name="method" />
+      <param name="holidays" />
+    </member>
+    <member name="M:sartorial.clib.AddBusDays(System.DateTime,System.Int32,System.String)">
+      <param name="startDate" />
+      <param name="offset" />
+      <param name="holidays" />
+    </member>
+    <member name="M:sartorial.clib.BusinessEOM(System.DateTime,System.String)">
+      <summary>
+Returns the last business day in the month of the given date
+      </summary>
+      <param name="date">
+        <summary>
+Date which defines the current month
+        </summary>
+      </param>
+      <param name="holidays">
+        <summary>
+Name of the holiday file which defines which days are holidays
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.DateFwdBus(System.DateTime,System.Int32,sartorial.clib.DateInterval,sartorial.clib.BadDayConv,System.String)">
+      <summary>
+Adds a number of date intervals to a given date and then adjusts the result so that it is a good business day.
+      </summary>
+      <param name="startDate">
+        <summary>
+Start date.
+        </summary>
+      </param>
+      <param name="numIntervals">
+        <summary>
+Number of intervals to move.
+        </summary>
+      </param>
+      <param name="ivl">
+        <summary>
+Date interval to move.
+        </summary>
+      </param>
+      <param name="badDayMethod">
+        <summary>
+Bad day convention.
+        </summary>
+      </param>
+      <param name="holidays">
+        <summary>
+Holiday file.
+        </summary>
+      </param>
+    </member>
+    <member name="T:sartorial.clib.DateOrInterval" />
+    <member name="M:sartorial.clib.DateOrInterval.op_Implicit(System.DateTime)~sartorial.clib.DateOrInterval">
+    </member>
+    <member name="M:sartorial.clib.DateOrInterval.op_Implicit(System.String)~sartorial.clib.DateOrInterval">
+    </member>
+    <member name="M:sartorial.clib.DateOrInterval.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.DateOrInterval.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="T:sartorial.clib.DateOrIntervalDate" />
+    <member name="M:sartorial.clib.DateOrIntervalDate.#ctor(System.DateTime,sartorial.clib.BadDayConv)">
+      <param name="date" />
+      <param name="badDayConv" />
+    </member>
+    <member name="M:sartorial.clib.DateOrIntervalDate.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.DateOrIntervalDate.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.DateOrIntervalDate.date" />
+    <member name="P:sartorial.clib.DateOrIntervalDate.badDayConv" />
+    <member name="T:sartorial.clib.DateOrIntervalInterval" />
+    <member name="M:sartorial.clib.DateOrIntervalInterval.#ctor(sartorial.clib.DateInterval,System.Nullable{sartorial.clib.BadDayConv},System.Nullable{System.SByte})">
+      <param name="ivl" />
+      <param name="badDayConv">
+        <summary>
+Optional. Default = "F".
+        </summary>
+      </param>
+      <param name="adjType">
+        <summary>
+Optional. Default = 'C'.
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.DateOrIntervalInterval.op_Implicit(System.String)~sartorial.clib.DateOrIntervalInterval">
+    </member>
+    <member name="M:sartorial.clib.DateOrIntervalInterval.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.DateOrIntervalInterval.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.DateOrIntervalInterval.ivl" />
+    <member name="P:sartorial.clib.DateOrIntervalInterval.badDayConv" />
+    <member name="P:sartorial.clib.DateOrIntervalInterval.adjType" />
+    <member name="F:sartorial.clib.IntervalAdjType.CALENDAR" />
+    <member name="F:sartorial.clib.IntervalAdjType.BUSINESS" />
+    <member name="F:sartorial.clib.IntervalAdjType.WEEKDAY" />
+    <member name="T:sartorial.clib.IntervalAdjType" />
+    <member name="M:sartorial.clib.DateOrIntervalIntervalMake(sartorial.clib.DateInterval,System.Nullable{sartorial.clib.BadDayConv},System.Nullable{System.SByte})">
+      <param name="ivl" />
+      <param name="badDayConv">
+        <summary>
+Optional. Default = "F".
+        </summary>
+      </param>
+      <param name="adjType">
+        <summary>
+Optional. Default = 'C'.
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.DateFwdAdj(System.DateTime,System.Int32,sartorial.clib.IntervalAdjType,System.String)">
+      <param name="startDate" />
+      <param name="days" />
+      <param name="adjType" />
+      <param name="holidays" />
+    </member>
+    <member name="M:sartorial.clib.DOIEndDate(System.DateTime,sartorial.clib.DateOrInterval,System.String)">
+      <param name="startDate" />
+      <param name="doi" />
+      <param name="holidays" />
+    </member>
+    <member name="T:sartorial.clib.CashFlowList">
+      <summary>
+Stores dates and amounts of cash flows. The date/amount pairs are not necessarily stored in date order.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.CashFlowList.#ctor(System.DateTime[],System.Double[])">
+      <param name="dates">
+        <summary>
+Array of dates. The dates do not have to ordered.
+        </summary>
+      </param>
+      <param name="amounts">
+        <summary>
+Array of cash amounts. Each amount must correspond to a date in the dates array at the same index. The number of amounts must be the same as the number of dates.
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.CashFlowList.op_Implicit(sartorial.clib.CashFlowList)~sartorial.clib.DateList">
+      <summary>
+Coerces to a DateList using the dates of the cash flow list
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.CashFlowList.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.CashFlowList.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.CashFlowList.dates">
+      <summary>
+Array of dates. The dates do not have to ordered.
+      </summary>
+    </member>
+    <member name="P:sartorial.clib.CashFlowList.amounts">
+      <summary>
+Array of cash amounts. Each amount must correspond to a date in the dates array at the same index. The number of amounts must be the same as the number of dates.
+      </summary>
+    </member>
+    <member name="P:sartorial.clib.CashFlowList.numItems">
+      <summary>
+Number of dates/amounts.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.SwapFixedFlows(System.Double,System.DateTime,sartorial.clib.DateInterval,System.DateTime,sartorial.clib.DayCountConv,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},sartorial.clib.BadDayConv,sartorial.clib.BadDayConv,System.String)">
+      <summary>
+This function calculates the cash flow dates and amounts associated with the fixed leg of an interest rate swap.
+      </summary>
+      <param name="couponRate" />
+      <param name="startDate">
+        <summary>
+Start date of the swap
+        </summary>
+      </param>
+      <param name="couponInterval">
+        <summary>
+Time between payments
+        </summary>
+      </param>
+      <param name="maturityDate">
+        <summary>
+Maturity date of the swap
+        </summary>
+      </param>
+      <param name="dayCountConv">
+        <summary>
+Day count convention used for calculating the amounts
+        </summary>
+      </param>
+      <param name="frontStub">
+        <summary>
+Optional. Default = True.
+If there is a stub is it at the front (or back)?
+        </summary>
+      </param>
+      <param name="shortStub">
+        <summary>
+Optional. Default = True.
+If there is a stub is it short (or long)?
+        </summary>
+      </param>
+      <param name="subtractInitial">
+        <summary>
+Optional. Default = False.
+Should we subtract an initial payment of -1
+        </summary>
+      </param>
+      <param name="keepStartDate">
+        <summary>
+Optional. Default = False.
+Should we keep the start date with zero payment if there is a stub, i.e. return a date before the startDate in the case of a stub.
+        </summary>
+      </param>
+      <param name="addFinal">
+        <summary>
+Optional. Default = False.
+Should we add a final payment of +1
+        </summary>
+      </param>
+      <param name="accBadDayConv">
+        <summary>
+Accrual bad day convention
+        </summary>
+      </param>
+      <param name="payBadDayConv">
+        <summary>
+Payment bad day convention
+        </summary>
+      </param>
+      <param name="holidayFile">
+        <summary>
+Name of holiday file for determining whether a day is a business day
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.CashFlowListMerge(sartorial.clib.CashFlowList,sartorial.clib.CashFlowList)">
+      <summary>
+Merges two cash flow lists together
+      </summary>
+      <param name="a" />
+      <param name="b" />
+    </member>
+    <member name="T:sartorial.clib.RateType">
+      <summary>
+Defines the type of the rate.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.RateType.#ctor(System.Int32)">
+      <param name="number" />
+    </member>
+    <member name="M:sartorial.clib.RateType.op_Implicit(System.Int32)~sartorial.clib.RateType">
+      <summary>
+Automatically converts an integer to a rate type.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.RateType.op_Implicit(System.String)~sartorial.clib.RateType">
+    </member>
+    <member name="M:sartorial.clib.RateType.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.RateType.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.RateType.number" />
+    <member name="P:sartorial.clib.RateType.name" />
+    <member name="M:sartorial.clib.RateType.Make(System.String)">
+      <param name="name" />
+    </member>
+    <member name="M:sartorial.clib.RateToDiscount(System.Double,System.DateTime,System.DateTime,sartorial.clib.DayCountConv,sartorial.clib.RateType)">
+      <summary>
+Converts a rate to a discount factor using a day count conventions and rate type.
+      </summary>
+      <param name="rate">
+        <summary>
+The rate, e.g. 0.03 = 3%
+        </summary>
+      </param>
+      <param name="startDate">
+        <summary>
+The start date for the rate
+        </summary>
+      </param>
+      <param name="maturityDate">
+        <summary>
+The maturity date for the rate
+        </summary>
+      </param>
+      <param name="dayCount">
+        <summary>
+The day count convention for the rate
+        </summary>
+      </param>
+      <param name="rateType">
+        <summary>
+The type of the rate, e.g. simple, compound etc
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.DiscountToRate(System.Double,System.DateTime,System.DateTime,sartorial.clib.DayCountConv,sartorial.clib.RateType)">
+      <summary>
+Converts a discount factor to a rate using day count convention and rate type.
+      </summary>
+      <param name="discount">
+        <summary>
+The discount factor
+        </summary>
+      </param>
+      <param name="startDate">
+        <summary>
+The start date for the requested rate
+        </summary>
+      </param>
+      <param name="maturityDate">
+        <summary>
+The maturity date for the requested rate
+        </summary>
+      </param>
+      <param name="dayCount">
+        <summary>
+The day count convention for the requested rate
+        </summary>
+      </param>
+      <param name="rateType">
+        <summary>
+The type of the requested rate, e.g. simple, compound etc
+        </summary>
+      </param>
+    </member>
+    <member name="F:sartorial.clib.InterpType.LINEAR_INTERP">
+      <summary>
+Linear interpolation.
+      </summary>
+    </member>
+    <member name="F:sartorial.clib.InterpType.FLAT_FORWARDS">
+      <summary>
+Flat forwards interpolation.
+      </summary>
+    </member>
+    <member name="T:sartorial.clib.InterpType">
+      <summary>
+Interpolation type for extracting rates from curves.
+      </summary>
+    </member>
+    <member name="T:sartorial.clib.ZeroCurve">
+      <summary>
+Defines a curve of zero coupon rates.
+      </summary>
+    </member>
+    <member name="M:sartorial.clib.ZeroCurve.#ctor(System.DateTime,sartorial.clib.InterpType,System.DateTime[],System.Double[],sartorial.clib.RateType,sartorial.clib.DayCountConv)">
+      <param name="baseDate">
+        <summary>
+Base date of the curve.
+        </summary>
+      </param>
+      <param name="interpType">
+        <summary>
+Interpolation type used to interpolate rates for dates between the dates defined within the curve.
+        </summary>
+      </param>
+      <param name="dates">
+        <summary>
+Dates in the curve.
+        </summary>
+      </param>
+      <param name="rates">
+        <summary>
+Zero coupon rates in the curve with rates corresponding to dates.
+        </summary>
+      </param>
+      <param name="rateType">
+        <summary>
+Describes how the rates are expressed, e.g. annually compounded, continously compounded etc.
+        </summary>
+      </param>
+      <param name="dayCountConv">
+        <summary>
+Describes how we measure time in the curve.
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.ZeroCurve.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.ZeroCurve.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.ZeroCurve.baseDate">
+      <summary>
+Base date of the curve.
+      </summary>
+    </member>
+    <member name="P:sartorial.clib.ZeroCurve.interpType">
+      <summary>
+Interpolation type used to interpolate rates for dates between the dates defined within the curve.
+      </summary>
+    </member>
+    <member name="P:sartorial.clib.ZeroCurve.dates">
+      <summary>
+Dates in the curve.
+      </summary>
+    </member>
+    <member name="P:sartorial.clib.ZeroCurve.rates">
+      <summary>
+Zero coupon rates in the curve with rates corresponding to dates.
+      </summary>
+    </member>
+    <member name="P:sartorial.clib.ZeroCurve.rateType">
+      <summary>
+Describes how the rates are expressed, e.g. annually compounded, continously compounded etc.
+      </summary>
+    </member>
+    <member name="P:sartorial.clib.ZeroCurve.dayCountConv">
+      <summary>
+Describes how we measure time in the curve.
+      </summary>
+    </member>
+    <member name="P:sartorial.clib.ZeroCurve.numItems" />
+    <member name="M:sartorial.clib.ZeroCurve.ZeroRate(System.DateTime)">
+      <param name="interpDate" />
+    </member>
+    <member name="M:sartorial.clib.ZeroCurve.PV(System.DateTime)">
+      <param name="interpDate" />
+    </member>
+    <member name="M:sartorial.clib.ZeroCurve.FV(System.DateTime,System.DateTime)">
+      <param name="startDate" />
+      <param name="endDate" />
+    </member>
+    <member name="M:sartorial.clib.ZeroCurveSample(System.DateTime,System.Double,System.Double,System.Nullable{System.Double},sartorial.clib.InterpType)">
+      <summary>
+Generates a sample zero curve out to 10 years with slope and some extra shape which goes up and decays to zero.
+      </summary>
+      <param name="baseDate" />
+      <param name="baseRate" />
+      <param name="slope" />
+      <param name="hump">
+        <summary>
+Optional. Default = 0.
+        </summary>
+      </param>
+      <param name="interpType" />
+    </member>
+    <member name="M:sartorial.clib.ForwardRate(sartorial.clib.ZeroCurve,System.DateTime,System.DateTime,sartorial.clib.DayCountConv,sartorial.clib.RateType)">
+      <param name="zc" />
+      <param name="startDate" />
+      <param name="maturityDate" />
+      <param name="dcc" />
+      <param name="basis" />
+    </member>
+    <member name="M:sartorial.clib.MMRate(sartorial.clib.ZeroCurve,System.DateTime,System.DateTime,sartorial.clib.DayCountConv)">
+      <param name="zc" />
+      <param name="startDate" />
+      <param name="maturityDate" />
+      <param name="dcc" />
+    </member>
+    <member name="M:sartorial.clib.SwapRate(sartorial.clib.ZeroCurve,System.DateTime,sartorial.clib.DateInterval,System.DateTime,sartorial.clib.DayCountConv,sartorial.clib.BadDayConv,sartorial.clib.BadDayConv,System.String,System.Nullable{System.Boolean})">
+      <param name="zc" />
+      <param name="startDate" />
+      <param name="couponInterval" />
+      <param name="maturityDate" />
+      <param name="dcc" />
+      <param name="accBadDayConv" />
+      <param name="payBadDayConv" />
+      <param name="holidays" />
+      <param name="stubAtEnd">
+        <summary>
+Optional. Default = False.
+        </summary>
+      </param>
+    </member>
+    <member name="T:sartorial.clib.IndexCurveType" />
+    <member name="M:sartorial.clib.IndexCurveType.#ctor(System.String,sartorial.clib.DateInterval,sartorial.clib.DayCountConv,sartorial.clib.DateInterval,sartorial.clib.DayCountConv,sartorial.clib.DateInterval,sartorial.clib.DayCountConv,sartorial.clib.BadDayConv,System.String)">
+      <param name="curveName" />
+      <param name="rateTenor" />
+      <param name="rateDayCountConv" />
+      <param name="fixedSwapInterval" />
+      <param name="fixedSwapDayCountConv" />
+      <param name="floatSwapInterval" />
+      <param name="floatSwapDayCountConv" />
+      <param name="badDayConv" />
+      <param name="holidayFile" />
+    </member>
+    <member name="M:sartorial.clib.IndexCurveType.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.IndexCurveType.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.IndexCurveType.curveName" />
+    <member name="P:sartorial.clib.IndexCurveType.rateTenor" />
+    <member name="P:sartorial.clib.IndexCurveType.rateDayCountConv" />
+    <member name="P:sartorial.clib.IndexCurveType.fixedSwapInterval" />
+    <member name="P:sartorial.clib.IndexCurveType.fixedSwapDayCountConv" />
+    <member name="P:sartorial.clib.IndexCurveType.floatSwapInterval" />
+    <member name="P:sartorial.clib.IndexCurveType.floatSwapDayCountConv" />
+    <member name="P:sartorial.clib.IndexCurveType.badDayConv" />
+    <member name="P:sartorial.clib.IndexCurveType.holidayFile" />
+    <member name="T:sartorial.clib.IndexCurveFixings" />
+    <member name="M:sartorial.clib.IndexCurveFixings.#ctor(System.DateTime[],System.Double[])">
+      <param name="dates" />
+      <param name="rates" />
+    </member>
+    <member name="M:sartorial.clib.IndexCurveFixings.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.IndexCurveFixings.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.IndexCurveFixings.dates" />
+    <member name="P:sartorial.clib.IndexCurveFixings.rates" />
+    <member name="T:sartorial.clib.IndexCurve" />
+    <member name="M:sartorial.clib.IndexCurve.#ctor(sartorial.clib.ZeroCurve,sartorial.clib.IndexCurveType,System.Nullable{sartorial.clib.IndexCurveFixings})">
+      <param name="zc" />
+      <param name="curveType" />
+      <param name="curveFixings">
+        <summary>
+Optional. 
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.IndexCurve.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.IndexCurve.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.IndexCurve.zc" />
+    <member name="P:sartorial.clib.IndexCurve.curveType" />
+    <member name="P:sartorial.clib.IndexCurve.curveFixings" />
+    <member name="M:sartorial.clib.ZeroCurveCash(System.DateTime,System.DateTime[],System.Double[],sartorial.clib.DayCountConv,sartorial.clib.InterpType)">
+      <param name="baseDate" />
+      <param name="dates" />
+      <param name="rates" />
+      <param name="dayCountConv" />
+      <param name="interpType" />
+    </member>
+    <member name="M:sartorial.clib.ZeroCurveSwaps(sartorial.clib.ZeroCurve,System.DateTime[],System.Double[],sartorial.clib.DateInterval,sartorial.clib.DayCountConv,sartorial.clib.BadDayConv,System.String)">
+      <param name="stubCurve" />
+      <param name="swapDates" />
+      <param name="swapRates" />
+      <param name="couponInterval" />
+      <param name="fixedDcc" />
+      <param name="badDayConv" />
+      <param name="holidays" />
+    </member>
+    <member name="F:sartorial.clib.CashOrSwap.IGNORE" />
+    <member name="F:sartorial.clib.CashOrSwap.CASH" />
+    <member name="F:sartorial.clib.CashOrSwap.SWAP" />
+    <member name="T:sartorial.clib.CashOrSwap" />
+    <member name="T:sartorial.clib.CashSwapCurve" />
+    <member name="M:sartorial.clib.CashSwapCurve.#ctor(System.DateTime,sartorial.clib.CashOrSwap[],System.DateTime[],System.Double[],sartorial.clib.DayCountConv,sartorial.clib.DateInterval,sartorial.clib.DayCountConv,sartorial.clib.BadDayConv,System.String)">
+      <param name="baseDate" />
+      <param name="cashOrSwaps" />
+      <param name="dates" />
+      <param name="rates" />
+      <param name="cashDcc" />
+      <param name="swapFixedInterval" />
+      <param name="swapFixedDcc" />
+      <param name="badDayConv" />
+      <param name="holidays" />
+    </member>
+    <member name="M:sartorial.clib.CashSwapCurve.from_string(System.String)">
+      <summary>
+Creates an object from the serialized object string.
+      </summary>
+      <param name="objectString" />
+    </member>
+    <member name="M:sartorial.clib.CashSwapCurve.from_file(System.String)">
+      <summary>
+Creates an object from a file containing the serialized object.
+      </summary>
+      <param name="filename" />
+    </member>
+    <member name="P:sartorial.clib.CashSwapCurve.baseDate" />
+    <member name="P:sartorial.clib.CashSwapCurve.cashOrSwaps" />
+    <member name="P:sartorial.clib.CashSwapCurve.dates" />
+    <member name="P:sartorial.clib.CashSwapCurve.rates" />
+    <member name="P:sartorial.clib.CashSwapCurve.cashDcc" />
+    <member name="P:sartorial.clib.CashSwapCurve.swapFixedInterval" />
+    <member name="P:sartorial.clib.CashSwapCurve.swapFixedDcc" />
+    <member name="P:sartorial.clib.CashSwapCurve.badDayConv" />
+    <member name="P:sartorial.clib.CashSwapCurve.holidays" />
+    <member name="M:sartorial.clib.CashSwapCurve.CashOrSwaps()">
+    </member>
+    <member name="M:sartorial.clib.CashSwapCurve.ZeroCurve(sartorial.clib.InterpType,System.Nullable{System.String})">
+      <param name="interpType" />
+      <param name="flags">
+        <summary>
+Optional. Default = "".
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.ZeroCurveCashSwaps(System.DateTime,System.Nullable{sartorial.clib.CashOrSwap}[],System.Nullable{System.DateTime}[],System.Nullable{System.Double}[],sartorial.clib.DayCountConv,sartorial.clib.InterpType,sartorial.clib.DateInterval,sartorial.clib.DayCountConv,sartorial.clib.BadDayConv,System.String,System.Nullable{System.String})">
+      <param name="baseDate" />
+      <param name="cashOrSwaps">
+        <summary>
+Optional. Default = "".
+        </summary>
+      </param>
+      <param name="dates">
+        <summary>
+Optional. 
+        </summary>
+      </param>
+      <param name="rates">
+        <summary>
+Optional. Default = 0.
+        </summary>
+      </param>
+      <param name="cashDcc" />
+      <param name="interpType" />
+      <param name="swapFixedInterval" />
+      <param name="swapFixedDcc" />
+      <param name="badDayConv" />
+      <param name="holidays" />
+      <param name="flags">
+        <summary>
+Optional. Default = "".
+        </summary>
+      </param>
+    </member>
+    <member name="M:sartorial.clib.MarketRate(sartorial.clib.ZeroCurve,sartorial.clib.CashOrSwap,System.DateTime,System.DateTime,sartorial.clib.DayCountConv,sartorial.clib.DateInterval,sartorial.clib.DayCountConv,sartorial.clib.BadDayConv,sartorial.clib.BadDayConv,System.String,System.Nullable{System.Boolean})">
+      <param name="zc" />
+      <param name="cashOrSwap" />
+      <param name="startDate" />
+      <param name="maturityDate" />
+      <param name="cashDcc" />
+      <param name="swapFixedInterval" />
+      <param name="swapFixedDcc" />
+      <param name="accBadDayConv" />
+      <param name="payBadDayConv" />
+      <param name="holidays" />
+      <param name="stubAtEnd">
+        <summary>
+Optional. Default = False.
+        </summary>
+      </param>
+    </member>
+  </members>
+</doc>

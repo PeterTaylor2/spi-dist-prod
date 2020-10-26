@@ -1,0 +1,8 @@
+{
+    "startTime": "Mon Oct 26 02:19:34 2020",
+    "ifn": "inputs\\holidays.inp",
+    "ofn": "Release-x86-vc15\\holidays.out",
+    "numPerms": 3,
+    "failToRun": 0,
+    "elapsedTime": 0.013040899999999911
+}

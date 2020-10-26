@@ -1,0 +1,8 @@
+{
+    "startTime": "Mon Oct 26 02:19:36 2020",
+    "ifn": "inputs\\dateInterval.inp",
+    "ofn": "Release-x86-vc15\\dateInterval.out",
+    "numPerms": 2,
+    "failToRun": 0,
+    "elapsedTime": 0.0014934000000000058
+}

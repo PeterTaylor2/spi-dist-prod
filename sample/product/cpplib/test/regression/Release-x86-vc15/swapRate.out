@@ -1,0 +1,16 @@
+Permutation 1 of 1
+baseDate:             2015-04-10
+baseRate:             0.01
+slope:                1.2
+hump:                 None
+interpType:           FLAT_FORWARDS
+startDate:            2016-04-10
+maturityDate:         2019-04-10
+couponInterval:       6M
+dayCountConv:         30/360
+badDayConv:           M
+holidays:             NONE
+stubAtEnd:            None
+
+swapRate:   2.083613%
+

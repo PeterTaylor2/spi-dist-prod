@@ -1,0 +1,8 @@
+{
+    "startTime": "Mon Oct 26 02:19:36 2020",
+    "ifn": "inputs\\swapRate.inp",
+    "ofn": "Release-x86-vc15\\swapRate.out",
+    "numPerms": 1,
+    "failToRun": 0,
+    "elapsedTime": 0.0006338000000000177
+}

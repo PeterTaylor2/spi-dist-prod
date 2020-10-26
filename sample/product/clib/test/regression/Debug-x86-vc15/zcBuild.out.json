@@ -1,0 +1,8 @@
+{
+    "startTime": "Mon Oct 26 02:20:42 2020",
+    "ifn": "inputs\\zcBuild.inp",
+    "ofn": "Debug-x86-vc15\\zcBuild.out",
+    "numPerms": 1,
+    "failToRun": 0,
+    "elapsedTime": 0.0006793999999999967
+}
