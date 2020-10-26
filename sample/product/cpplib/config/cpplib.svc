@@ -1,0 +1,42 @@
+/* -*-c++-*- */
+
+/**
+ * This is an example SPI library containing wrapper functions for an open
+ * source C++ library.
+ *
+ * Originally this was all implement via the ISDA/CDS C-library.
+ *
+ * We have now implemented down to holidays.cfg in the new C++ library.
+ */
+
+%service cpplib namespace=cpplib;
+
+%export "dateType.cfg";
+%export "version.cfg";
+%export "math.cfg";
+%export "dates.cfg";
+%export "holidays.cfg";
+%export "cashflow.cfg";
+%export "rates.cfg";
+%export "zeroCurve.cfg";
+%export "indexCurve.cfg";
+%export "zcBuild.cfg";
+%export "bsopt.cfg";
+%export "dist.cfg";
+
+// code at the service level is needed to clear the caches created by
+// the holiday file system
+
+#include <utils/Holidays.hpp>
+#include <cpplib-spi/ClassWrappers.hpp>
+
+void startup(dirname)
+{
+    RegisterClassWrappers();
+}
+
+void shutdown()
+{
+    HolidayCacheClear();
+}
+

@@ -1,0 +1,26 @@
+/* -*-c++-*- */
+// this is the test service
+//
+// we will build up as we go along to test all features of the SPI code
+// generator
+
+/**
+ * This is a description of the entire service. As such it will appear
+ * at the start of the generated manual when we get to the point of
+ * generating manuals.
+ *
+ * You should be describing the business functionality of the service.
+ */
+
+/**
+ * Descriptions can be in multiple blocks for the same object being
+ * described, and they will be merged together in such cases.
+ * A new description will create a new paragraph.
+ */
+
+%service ql namespace=ql;
+
+%export "version.cfg";
+%export "math.cfg";
+%export "dates.cfg";
+

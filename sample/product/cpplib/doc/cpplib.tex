@@ -1,0 +1,47 @@
+\documentclass[a4paper] {report}
+
+\addtolength{\hoffset}{-1.27cm} 
+\addtolength{\textwidth}{2.54cm}
+
+\pagestyle{headings}
+
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{graphicx}
+% always load hyperref last since it redefines many LaTeX commands
+\usepackage[colorlinks=true,bookmarks=true]{hyperref}
+\setlongtables
+
+%\setlength{\topmargin}{-20mm}
+%\setlength{\oddsidemargin}{-2.4mm}
+%\setlength{\evensidemargin}{-2.4mm}
+%\setlength{\textwidth}{164mm}
+%\setlength{\textheight}{256mm}
+%\setlength{\columnsep}{8mm}
+%\setlength{\columnseprule}{0.4pt}
+
+\parindent0mm
+\parskip2ex plus1ex 
+
+\author{Sartorial Programming}
+\input{tex/datestamp.tex}
+\sloppy
+
+\title{CLIB user guide \\ Version \cpplibVersionNumber{}}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\newpage
+\chapter{Introduction}
+
+\input{tex/service.tex}
+
+\chapter{Data types}
+\input{tex/types.tex}
+
+\chapter{Functions and class methods}
+\input{tex/functionsAndClassMethods.tex}
+\end{document}

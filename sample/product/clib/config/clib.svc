@@ -1,0 +1,40 @@
+/* -*-c++-*- */
+
+/**
+ * This is an example SPI library containing wrapper functions for the
+ * ISDA/CDS C-library.
+ *
+ * In general we will not be using C++ except for error handling, hence the
+ * name CLIB (C-library)
+ */
+
+%service clib namespace=clib version="1.100.0.0";
+
+%export "dateType.cfg";
+%export "version.cfg";
+%export "math.cfg";
+%export "dates.cfg";
+%export "holidays.cfg";
+%export "cashflow.cfg";
+%export "rates.cfg";
+%export "zeroCurve.cfg";
+%export "indexCurve.cfg";
+%export "zcBuild.cfg";
+
+// code at the service level is needed to clear the caches created by
+// the ISDA/CDS holiday file system
+
+#include <isda/buscache.h>
+#include <spi_util/UserInfo.hpp>
+
+void startup(dirname)
+{
+    clib_set_time_out(spi::Date(2021,11,1));
+}
+
+void shutdown()
+{
+    JpmcdsHolidayEmptyCache();
+}
+
+
