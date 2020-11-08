@@ -20,3 +20,6 @@ win??_msvc14*
 *.log
 **/.vs
 /sample/makefiles/config-*.mk
+*vcxprojAssemblyReference.cache
+Release-*
+Debug-*
