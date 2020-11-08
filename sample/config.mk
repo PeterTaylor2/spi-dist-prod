@@ -1,6 +1,6 @@
 U_SPI_HOME=$(U_SAMPLE_HOME)/3rdParty/spi
 NO_SVO2TEX=1
-SARTORIAL_CONFIG?=win64_32
+SARTORIAL_CONFIG?=win64
 -include $(U_SAMPLE_HOME)/makefiles/config-$(COMPUTERNAME).mk
 include $(U_SPI_HOME)/makefiles/config/config.mk
 
